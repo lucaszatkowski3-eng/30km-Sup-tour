@@ -1,721 +1,210 @@
-```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>MONSTER // OPEN SEA ODYSSEY</title>
-
-    <meta
-        name="description"
-        content="30 KM Open Water SUP Challenge – Deutschland nach Dänemark."
-    >
-
+    <title>30 KM SUP Tour – Deutschland nach Dänemark</title>
+    <meta name="description" content="Informationsseite zur geplanten 30 Kilometer SUP-Tour von Schönberger Strand nach Gulstav in Dänemark.">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- LOADING SCREEN -->
     <div id="loader">
-        <div class="loader-logo">
-            MONSTER
-        </div>
-
-        <div class="loader-line">
-            <span></span>
-        </div>
-
-        <div class="loader-text">
-            LOADING ODYSSEY
-        </div>
+        <div class="loader-logo">30 KM SUP TOUR</div>
+        <div class="loader-line"><span></span></div>
+        <div class="loader-text">INFORMATIONEN WERDEN GELADEN</div>
     </div>
 
-
-    <!-- PARTICLES -->
-    <canvas id="particles"></canvas>
-
-
-    <!-- NAVIGATION -->
     <nav id="navbar">
-
-        <div class="nav-logo">
-            <span class="monster-mark">M</span>
-            <span>OPEN SEA</span>
-        </div>
-
+        <a class="nav-logo" href="#top">30 KM SUP TOUR</a>
         <div class="nav-links">
-            <a href="#challenge">Challenge</a>
-            <a href="#journey">Journey</a>
-            <a href="#safety">Safety</a>
-            <a href="#partner">Partner</a>
+            <a href="#projekt">Projekt</a>
+            <a href="#route">Route</a>
+            <a href="#vorbereitung">Vorbereitung</a>
+            <a href="#sicherheit">Sicherheit</a>
+            <a href="#partner">Unterstützung</a>
         </div>
-
-        <button class="menu-button" id="menuButton">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="menu-button" id="menuButton" aria-label="Menü öffnen">
+            <span></span><span></span><span></span>
         </button>
-
     </nav>
 
-
-    <!-- MOBILE MENU -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#challenge">Challenge</a>
-        <a href="#journey">Journey</a>
-        <a href="#safety">Safety</a>
-        <a href="#partner">Partner</a>
+        <a href="#projekt">Projekt</a>
+        <a href="#route">Route</a>
+        <a href="#vorbereitung">Vorbereitung</a>
+        <a href="#sicherheit">Sicherheit</a>
+        <a href="#partner">Unterstützung</a>
     </div>
 
-
-    <!-- HERO -->
-    <header class="hero">
-
-        <div class="hero-background"></div>
-
-        <div class="hero-noise"></div>
-
-        <div class="hero-content">
-
-            <div class="hero-tag reveal">
-                MONSTER ENERGY × OPEN WATER
-            </div>
-
-            <h1 class="hero-title">
-
-                <span class="line">30 KM</span>
-
-                <span class="line green-text">
-                    OPEN SEA
-                </span>
-
-                <span class="line small">
-                    ODYSSEY
-                </span>
-
-            </h1>
-
-            <p class="hero-description reveal">
-                Mit dem SUP von Deutschland nach Dänemark.
-                30 Kilometer offene Ostsee. Eine Challenge,
-                die nicht nur Ausdauer, sondern echten Willen verlangt.
-            </p>
-
-            <div class="hero-buttons reveal">
-
-                <a href="#challenge" class="button primary">
-                    <span>ENTDECKE DIE CHALLENGE</span>
-                    <b>→</b>
-                </a>
-
-                <a href="#partner" class="button secondary">
-                    PARTNERSHIP
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- SCROLL INDICATOR -->
-        <div class="scroll-indicator">
-
-            <span>SCROLL TO EXPLORE</span>
-
-            <div class="scroll-line">
-                <span></span>
-            </div>
-
-        </div>
-
-
-        <!-- DISTANCE -->
-        <div class="hero-distance">
-
-            <div>
-                <strong>30</strong>
-                <span>KM</span>
-            </div>
-
-            <div class="distance-line">
-                <span></span>
-            </div>
-
-            <div>
-                <strong>2</strong>
-                <span>LÄNDER</span>
-            </div>
-
-        </div>
-
-    </header>
-
-
-    <!-- TICKER -->
-    <div class="ticker">
-
-        <div class="ticker-track">
-
-            <span>NO SHORTCUTS</span>
-            <i>✦</i>
-
-            <span>30 KM OPEN WATER</span>
-            <i>✦</i>
-
-            <span>GERMANY → DENMARK</span>
-            <i>✦</i>
-
-            <span>NO SHORTCUTS</span>
-            <i>✦</i>
-
-            <span>30 KM OPEN WATER</span>
-            <i>✦</i>
-
-            <span>GERMANY → DENMARK</span>
-            <i>✦</i>
-
-        </div>
-
-    </div>
-
-
-    <!-- CHALLENGE -->
-    <section id="challenge" class="section challenge">
-
-        <div class="container">
-
-            <div class="section-heading reveal">
-
-                <div class="eyebrow">
-                    01 // THE CHALLENGE
+    <main id="top">
+        <header class="hero">
+            <div class="container">
+                <div class="hero-label">OPEN WATER SUP PROJECT</div>
+                <h1>30 KM<br><span>SUP TOUR</span></h1>
+                <p class="hero-lead">
+                    Eine geplante Langstrecken-Tour mit dem Stand-Up-Paddle-Board
+                    von Deutschland nach Dänemark.
+                </p>
+                <div class="hero-facts">
+                    <div><strong>30 km</strong><span>geplante Distanz</span></div>
+                    <div><strong>2 Länder</strong><span>Deutschland → Dänemark</span></div>
+                    <div><strong>SUP</strong><span>offenes Wasser</span></div>
                 </div>
-
-                <h2>
-                    NOT JUST<br>
-                    <span>A SUP TRIP.</span>
-                </h2>
-
             </div>
+        </header>
 
-
-            <div class="challenge-grid">
-
-                <div class="challenge-visual reveal">
-
-                    <div class="image-frame">
-
-                        <div class="image-overlay"></div>
-
-                        <div class="coordinates">
-                            54°27' N<br>
-                            10°40' E
-                        </div>
-
-                        <div class="visual-label">
-                            OPEN WATER
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="challenge-text reveal">
-
-                    <p class="large-text">
-                        30 Kilometer offene Ostsee.
-                        Deutschland im Rücken.
-                        Dänemark vor uns.
-                    </p>
-
-                    <p>
-                        Die geplante Route führt vom Schönberger Strand
-                        in Schleswig-Holstein bis nach Gulstav in Dänemark.
-                        Das Ziel ist nicht einfach eine lange SUP-Tour,
-                        sondern eine echte Ausdauer-Challenge auf offenem Wasser.
-                    </p>
-
-                    <p>
-                        Wind, Wellen, Strömung und Wetter machen jeden
-                        Kilometer zu einer neuen Herausforderung.
-                    </p>
-
-                    <div class="challenge-facts">
-
-                        <div class="fact">
-                            <strong>30</strong>
-                            <span>KILOMETER</span>
-                        </div>
-
-                        <div class="fact">
-                            <strong>2</strong>
-                            <span>LÄNDER</span>
-                        </div>
-
-                        <div class="fact">
-                            <strong>1</strong>
-                            <span>BOARD</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ROUTE -->
-    <section class="route-section">
-
-        <div class="route-glow"></div>
-
-        <div class="container">
-
-            <div class="section-heading centered reveal">
-
-                <div class="eyebrow">
-                    02 // THE ROUTE
-                </div>
-
-                <h2>
-                    GERMANY
-                    <span>→</span>
-                    DENMARK
-                </h2>
-
+        <section id="projekt" class="section">
+            <div class="container narrow">
+                <div class="eyebrow">01 // DAS PROJEKT</div>
+                <h2>Worum geht es?</h2>
+                <p class="intro">
+                    Ziel des Projekts ist eine rund 30 Kilometer lange SUP-Tour über
+                    die Ostsee. Die geplante Strecke führt vom Schönberger Strand
+                    in Schleswig-Holstein bis nach Gulstav auf der dänischen Insel Lolland.
+                </p>
                 <p>
-                    One line. 30 kilometers. No shortcuts.
+                    Die Tour soll sportlich anspruchsvoll, aber vor allem sorgfältig
+                    vorbereitet und sicher durchgeführt werden. Auf dieser Seite werden
+                    die wichtigsten Informationen zum Vorhaben, zur Route, zur Vorbereitung
+                    und zum Sicherheitskonzept zusammengefasst.
                 </p>
-
             </div>
+        </section>
 
-
-            <div class="route-map reveal">
-
-                <div class="map-grid"></div>
-
-                <div class="country germany">
-                    <span>GERMANY</span>
-                </div>
-
-                <div class="country denmark">
-                    <span>DENMARK</span>
-                </div>
-
-                <div class="route-line">
-
-                    <div class="route-progress"></div>
-
-                    <div class="route-dot start"></div>
-
-                    <div class="route-dot finish"></div>
-
-                    <div class="route-board">
-                        🏄
+        <section id="route" class="section section-alt">
+            <div class="container">
+                <div class="eyebrow">02 // DIE ROUTE</div>
+                <h2>Deutschland → Dänemark</h2>
+                <div class="route-info">
+                    <div class="route-point">
+                        <span class="number">01</span>
+                        <h3>Start</h3>
+                        <strong>Schönberger Strand</strong>
+                        <p>Schleswig-Holstein, Deutschland</p>
                     </div>
-
+                    <div class="route-arrow">→</div>
+                    <div class="route-point">
+                        <span class="number">02</span>
+                        <h3>Ziel</h3>
+                        <strong>Gulstav</strong>
+                        <p>Lolland, Dänemark</p>
+                    </div>
                 </div>
-
-                <div class="route-label start-label">
-                    SCHÖNBERGER STRAND
+                <div class="info-box">
+                    <strong>Geplante Distanz: ca. 30 Kilometer</strong>
+                    <p>
+                        Die genaue Route wird vor der Durchführung anhand von Wetter,
+                        Wind, Strömung, Seeverkehr und Sicherheitsbedingungen festgelegt.
+                        Die Darstellung auf dieser Website ist deshalb als Projektplanung
+                        und nicht als endgültige Navigationsroute zu verstehen.
+                    </p>
                 </div>
-
-                <div class="route-label finish-label">
-                    GULSTAV
-                </div>
-
-                <div class="route-distance">
-                    30 KM
-                </div>
-
             </div>
+        </section>
 
-        </div>
-
-    </section>
-
-
-    <!-- JOURNEY -->
-    <section id="journey" class="section journey">
-
-        <div class="container">
-
-            <div class="section-heading reveal">
-
-                <div class="eyebrow">
-                    03 // THE JOURNEY
+        <section id="vorbereitung" class="section">
+            <div class="container">
+                <div class="eyebrow">03 // VORBEREITUNG</div>
+                <h2>Die Tour wird vorbereitet</h2>
+                <div class="text-grid">
+                    <article>
+                        <span class="number">01</span>
+                        <h3>Training</h3>
+                        <p>
+                            Aufbau von Ausdauer, Kraft und Paddeltechnik. Die Trainingsdistanz
+                            wird schrittweise erhöht, damit der Körper an längere Einheiten
+                            auf dem Wasser gewöhnt wird.
+                        </p>
+                    </article>
+                    <article>
+                        <span class="number">02</span>
+                        <h3>Equipment</h3>
+                        <p>
+                            SUP-Board, Paddel, persönliche Schutzausrüstung, Navigation,
+                            Kommunikation, Verpflegung und weitere notwendige Ausrüstung
+                            werden vorab geprüft und vorbereitet.
+                        </p>
+                    </article>
+                    <article>
+                        <span class="number">03</span>
+                        <h3>Wetterplanung</h3>
+                        <p>
+                            Der Start erfolgt nur bei geeigneten Bedingungen. Wind,
+                            Wellen, Strömung, Sicht und die Wetterentwicklung werden
+                            vor der Tour berücksichtigt.
+                        </p>
+                    </article>
+                    <article>
+                        <span class="number">04</span>
+                        <h3>Organisation</h3>
+                        <p>
+                            Start, Ziel, Begleitung, Kommunikation, Navigation und
+                            Notfallabläufe werden vor dem Challenge-Tag möglichst
+                            vollständig organisiert.
+                        </p>
+                    </article>
                 </div>
-
-                <h2>
-                    FROM<br>
-                    <span>TRAINING</span><br>
-                    TO THE SEA.
-                </h2>
-
             </div>
-
-
-            <div class="journey-grid">
-
-                <article class="journey-card reveal">
-
-                    <div class="card-number">01</div>
-
-                    <div class="card-icon">⚡</div>
-
-                    <h3>TRAINING</h3>
-
-                    <p>
-                        Ausdauer, Technik und Kraft.
-                        Kilometer für Kilometer wird die Distanz erhöht.
-                    </p>
-
-                    <div class="card-line"></div>
-
-                </article>
-
-
-                <article class="journey-card reveal">
-
-                    <div class="card-number">02</div>
-
-                    <div class="card-icon">🌊</div>
-
-                    <h3>PREPARATION</h3>
-
-                    <p>
-                        Equipment, Wetterfenster, Navigation,
-                        Sicherheitsplanung und Logistik.
-                    </p>
-
-                    <div class="card-line"></div>
-
-                </article>
-
-
-                <article class="journey-card reveal">
-
-                    <div class="card-number">03</div>
-
-                    <div class="card-icon">🔥</div>
-
-                    <h3>CHALLENGE DAY</h3>
-
-                    <p>
-                        Start. Offenes Wasser.
-                        30 Kilometer.
-                        Zieleinlauf in Dänemark.
-                    </p>
-
-                    <div class="card-line"></div>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- COUNTER SECTION -->
-    <section class="counter-section">
-
-        <div class="container">
-
-            <div class="counter-grid">
-
-                <div class="counter-item reveal">
-
-                    <span class="counter" data-target="30">0</span>
-                    <small>KM DISTANCE</small>
-
-                </div>
-
-                <div class="counter-item reveal">
-
-                    <span class="counter" data-target="2">0</span>
-                    <small>COUNTRIES</small>
-
-                </div>
-
-                <div class="counter-item reveal">
-
-                    <span class="counter" data-target="1">0</span>
-                    <small>MISSION</small>
-
-                </div>
-
-                <div class="counter-item reveal">
-
-                    <span class="counter" data-target="100">0</span>
-                    <small>% COMMITMENT</small>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SAFETY -->
-    <section id="safety" class="section safety">
-
-        <div class="container">
-
-            <div class="section-heading reveal">
-
-                <div class="eyebrow">
-                    04 // SAFETY
-                </div>
-
-                <h2>
-                    PUSH THE<br>
-                    <span>LIMITS.</span><br>
-                    NOT SAFETY.
-                </h2>
-
-            </div>
-
-
-            <div class="safety-grid">
-
-                <div class="safety-item reveal">
-
-                    <span>01</span>
-
-                    <h3>WEATHER</h3>
-
-                    <p>
-                        Wind, Wellen, Strömung und Sicht werden
-                        vor dem Start geprüft.
-                    </p>
-
-                </div>
-
-
-                <div class="safety-item reveal">
-
-                    <span>02</span>
-
-                    <h3>SUPPORT BOAT</h3>
-
-                    <p>
-                        Ein geeignetes Begleitboot soll während
-                        der Challenge für Sicherheit und Support sorgen.
-                    </p>
-
-                </div>
-
-
-                <div class="safety-item reveal">
-
-                    <span>03</span>
-
-                    <h3>GPS TRACKING</h3>
-
-                    <p>
-                        Die Position wird während der Tour
-                        kontinuierlich überwacht.
-                    </p>
-
-                </div>
-
-
-                <div class="safety-item reveal">
-
-                    <span>04</span>
-
-                    <h3>COMMUNICATION</h3>
-
-                    <p>
-                        Funk, Mobilfunk und regelmäßige
-                        Kommunikation mit dem Support-Team.
-                    </p>
-
-                </div>
-
-
-                <div class="safety-item reveal">
-
-                    <span>05</span>
-
-                    <h3>ABORT PLAN</h3>
-
-                    <p>
-                        Bei gefährlichen Bedingungen wird die
-                        Challenge abgebrochen.
-                    </p>
-
-                </div>
-
-
-                <div class="safety-item reveal">
-
-                    <span>06</span>
-
-                    <h3>PREPARATION</h3>
-
-                    <p>
-                        Die Route und alle Sicherheitsmaßnahmen
-                        werden vorab detailliert geplant.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- MONSTER PARTNERSHIP -->
-    <section id="partner" class="section partnership">
-
-        <div class="energy-background"></div>
-
-        <div class="container">
-
-            <div class="partnership-content reveal">
-
-                <div class="eyebrow">
-                    MONSTER ENERGY // PARTNERSHIP
-                </div>
-
-                <h2>
-                    LET'S MAKE<br>
-                    <span>30 KM LOUD.</span>
-                </h2>
-
-                <p class="partnership-text">
-                    Dieses Projekt soll nicht nur eine sportliche
-                    Herausforderung werden, sondern eine Geschichte,
-                    die man verfolgen kann – Training, Vorbereitung,
-                    Start, offene See und Zieleinlauf.
+        </section>
+
+        <section id="sicherheit" class="section section-alt">
+            <div class="container narrow">
+                <div class="eyebrow">04 // SICHERHEIT</div>
+                <h2>Sicherheit steht an erster Stelle</h2>
+                <p class="intro">
+                    Eine 30-Kilometer-Strecke auf offenem Wasser ist eine ernsthafte
+                    Herausforderung. Deshalb wird die Durchführung an die tatsächlichen
+                    Bedingungen angepasst und bei ungeeignetem Wetter verschoben oder
+                    abgebrochen.
                 </p>
-
-
-                <div class="partnership-grid">
-
-                    <div>
-                        <span>01</span>
-                        <strong>ENERGY</strong>
-                        <p>Produkte und Support</p>
-                    </div>
-
-                    <div>
-                        <span>02</span>
-                        <strong>EQUIPMENT</strong>
-                        <p>Sport- und Sicherheitsequipment</p>
-                    </div>
-
-                    <div>
-                        <span>03</span>
-                        <strong>MEDIA</strong>
-                        <p>Content und Dokumentation</p>
-                    </div>
-
-                    <div>
-                        <span>04</span>
-                        <strong>SUPPORT</strong>
-                        <p>Begleitboot und Logistik</p>
-                    </div>
-
+                <div class="safety-list">
+                    <div><strong>Wetter & Bedingungen</strong><span>Prüfung von Wind, Wellen, Strömung und Sicht vor dem Start.</span></div>
+                    <div><strong>Begleitboot</strong><span>Geplante Unterstützung auf dem Wasser für Sicherheit, Kommunikation und Logistik.</span></div>
+                    <div><strong>Navigation</strong><span>GPS-Tracking und vorherige Planung der Strecke.</span></div>
+                    <div><strong>Kommunikation</strong><span>Geeignete Kommunikationsmöglichkeiten zwischen Board und Support.</span></div>
+                    <div><strong>Abbruchplan</strong><span>Bei gefährlichen Bedingungen wird die Tour nicht fortgesetzt.</span></div>
                 </div>
-
-
-                <a
-                    href="mailto:lucaszatkowski3@gmail.com"
-                    class="button monster-button"
-                >
-                    KONTAKT AUFNEHMEN →
-                </a>
-
             </div>
+        </section>
 
-        </div>
-
-    </section>
-
-
-    <!-- FINAL -->
-    <section class="final">
-
-        <div class="final-water"></div>
-
-        <div class="container">
-
-            <div class="final-content reveal">
-
-                <div class="final-small">
-                    ONE BOARD.
-                </div>
-
-                <h2>
-                    ONE GOAL.
-                </h2>
-
-                <div class="final-green">
-                    30 KM.
-                </div>
-
-                <p>
-                    GERMANY → DENMARK
+        <section id="partner" class="section">
+            <div class="container narrow">
+                <div class="eyebrow">05 // UNTERSTÜTZUNG</div>
+                <h2>Unterstützung & Partnerschaft</h2>
+                <p class="intro">
+                    Für die Umsetzung des Projekts wird Unterstützung in verschiedenen
+                    Bereichen gesucht. Besonders relevant sind Sicherheit, Logistik,
+                    Ausrüstung und die Dokumentation der Tour.
                 </p>
-
+                <div class="support-list">
+                    <div><strong>Begleitboot</strong><span>Unterstützung auf dem Wasser während der Tour.</span></div>
+                    <div><strong>Ausrüstung</strong><span>Sport-, Sicherheits- und Navigationsequipment.</span></div>
+                    <div><strong>Verpflegung</strong><span>Versorgung während Vorbereitung und Challenge.</span></div>
+                    <div><strong>Dokumentation</strong><span>Foto-, Video- und Social-Media-Begleitung.</span></div>
+                </div>
+                <div class="partner-note">
+                    <strong>Monster Energy</strong>
+                    <p>
+                        Monster Energy ist aktuell kein offizieller Partner des Projekts.
+                        Die Marke wird auf dieser Informationsseite lediglich im Zusammenhang
+                        mit einer möglichen zukünftigen Partnerschaft erwähnt.
+                    </p>
+                </div>
+                <a href="mailto:lucaszatkowski3@gmail.com" class="contact-button">KONTAKT AUFNEHMEN</a>
             </div>
+        </section>
+    </main>
 
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
     <footer>
-
         <div class="container footer-inner">
-
             <div>
-
-                <div class="footer-logo">
-                    MONSTER // OPEN SEA
-                </div>
-
-                <p>
-                    Open Water SUP Project
-                </p>
-
+                <strong>30 KM SUP TOUR</strong>
+                <p>Open Water SUP Project</p>
             </div>
-
-            <div class="footer-right">
-
-                <p>
-                    © 2026 Luca Szatkowski
-                </p>
-
-                <p class="disclaimer">
-                    Monster Energy ist aktuell kein offizieller
-                    Partner dieses Projekts.
-                </p>
-
-            </div>
-
+            <p>© 2026 Luca Szatkowski</p>
         </div>
-
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
 </html>
-```
