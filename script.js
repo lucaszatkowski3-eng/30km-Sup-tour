@@ -1,4 +1,3 @@
-```javascript
 /* ==========================================
    MONSTER OPEN SEA ODYSSEY
    VERSION 2
@@ -11,19 +10,36 @@
 
 document.body.classList.add("loading");
 
-window.addEventListener("load", () => {
+let loaderHidden = false;
 
-    setTimeout(() => {
+function hideLoader() {
+    if (loaderHidden) return;
+    loaderHidden = true;
 
-        const loader = document.getElementById("loader");
+    const loader = document.getElementById("loader");
 
+    if (loader) {
         loader.classList.add("hidden");
 
-        document.body.classList.remove("loading");
+        // Remove the loader completely after the fade-out.
+        setTimeout(() => loader.remove(), 900);
+    }
 
-    }, 2300);
+    document.body.classList.remove("loading");
+}
 
-});
+// Never let an external image, font, or other network request
+// keep the loading screen visible forever.
+setTimeout(hideLoader, 2500);
+
+// If everything loads normally, hide it shortly after the page is ready.
+if (document.readyState === "complete") {
+    setTimeout(hideLoader, 500);
+} else {
+    window.addEventListener("load", () => {
+        setTimeout(hideLoader, 500);
+    }, { once: true });
+}
 
 
 /* ==========================================
@@ -660,4 +676,3 @@ console.log(
 console.log(
     "30 KM • GERMANY → DENMARK"
 );
-```
